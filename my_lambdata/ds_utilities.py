@@ -8,5 +8,8 @@ def enlarge(n):
 # this code breaks our ability to import enlarge from other files, if left in the global scope:
 #
 # print("HELLO")
-y = int(input("Please choose a number"))
-print(y, enlarge(y))
+
+if __name__ == '__main__':
+
+    y = int(input("Please choose a number"))
+    print(y, enlarge(y))
